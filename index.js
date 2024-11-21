@@ -2,8 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
-  res.send('Hello World 2')
+  res.status(200).send('Deploy backend bem-sucedido!')
 })
 
 app.listen(process.env.PORT || 3000)
